@@ -1,5 +1,5 @@
 {
-  "name": "@jt0033418/sp-components",
+  "name": "@petrher/sp-components",
   "version": "0.1.0",
   "description": "Custom reusable components and layouts built with Fluent UI React",
   "type": "module",
@@ -29,10 +29,10 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://jtfg.ghe.com/JT0033418/jtfg-sp-components.git"
+    "url": "https://github.com/PetrHer/sp-components.git"
   },
   "publishConfig": {
-    "registry": "https://npm.jtfg.ghe.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
     "@fluentui/react-components": "^9.73.8",
