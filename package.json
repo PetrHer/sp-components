@@ -36,15 +36,15 @@
   },
   "peerDependencies": {
     "@fluentui/react-components": "^9.73.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": ">=17.0.0 <18.0.0",
+    "react-dom": ">=17.0.0 <18.0.0"
   },
   "devDependencies": {
     "@fluentui/react-components": "^9.73.1",
-    "@types/react": "^17.0.89",
-    "@types/react-dom": "^17.0.26",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "@types/react": "17.0.45",
+    "@types/react-dom": "17.0.17",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "rimraf": "^6.0.1",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3"
