@@ -1,0 +1,36 @@
+IPC -> jtfg-sp-components extraction TODO
+
+Phase 1 (move now)
+- [ ] Move UniversalGrid as core reusable primitive (already started, continue hardening).
+- [ ] Add ConfirmDialog component.
+- [ ] Add ImportMapper component.
+- [ ] Export interfaces/types for moved components.
+- [ ] Add minimal usage examples to README.
+- [ ] Validate with npm run typecheck && npm run build.
+
+Phase 2 (small abstractions, then move)
+- [ ] Add FormLayout with configurable labels/actions (no IPC text hardcoded).
+- [ ] Extract PricelistPicker into generic HierarchyPicker with data-provider input.
+- [ ] Extract EntityCreateDialog into generic CreateEntityDialog with injected fields/options.
+- [ ] Add shared contracts:
+  - [ ] TreeNode
+  - [ ] ImportSource / ColumnMapping
+- [ ] Add optional reusable hooks:
+  - [ ] useGridStatePersistence
+  - [ ] useHierarchyBrowser
+  - [ ] useSpreadsheetImportMapper
+
+Phase 3 (keep domain in IPC, consume package)
+- [ ] Keep domain-specific components in IPC:
+  - ApprovalActions
+  - DocumentsTab
+  - ListView
+  - PricelistDetail
+  - ExceptionDetail
+  - IPC root orchestration component
+- [ ] Replace IPC local primitives with package imports incrementally.
+- [ ] Add boundary tests around SharePoint/service adapters in IPC.
+
+Notes
+- Target package is SPFx-only, so browser storage usage is acceptable.
+- Prioritize reusable UI primitives first, domain workflows later.
