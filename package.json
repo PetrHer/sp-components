@@ -35,12 +35,12 @@
     "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
-    "@fluentui/react-components": "^9.73.8",
+    "@fluentui/react-components": "^9.73.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@fluentui/react-components": "^9.73.8",
+    "@fluentui/react-components": "^9.73.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "react": "^19.2.6",
