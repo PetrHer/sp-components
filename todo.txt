@@ -1,15 +1,15 @@
 IPC -> jtfg-sp-components extraction TODO
 
 Phase 1 (move now)
-- [ ] Move UniversalGrid as core reusable primitive (already started, continue hardening).
-- [ ] Add ConfirmDialog component.
-- [ ] Add ImportMapper component.
-- [ ] Export interfaces/types for moved components.
-- [ ] Add minimal usage examples to README.
-- [ ] Validate with npm run typecheck && npm run build.
+- [x] Move UniversalGrid as core reusable primitive (already started, continue hardening).
+- [x] Add ConfirmDialog component.
+- [x] Add ImportMapper component.
+- [x] Export interfaces/types for moved components.
+- [x] Add minimal usage examples to README.
+- [x] Validate with npm run typecheck && npm run build.
 
 Phase 2 (small abstractions, then move)
-- [ ] Add FormLayout with configurable labels/actions (no IPC text hardcoded).
+- [x] Add FormLayout with configurable labels/actions (no IPC text hardcoded).
 - [ ] Extract PricelistPicker into generic HierarchyPicker with data-provider input.
 - [ ] Extract EntityCreateDialog into generic CreateEntityDialog with injected fields/options.
 - [ ] Add shared contracts:
