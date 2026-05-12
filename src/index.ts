@@ -4,3 +4,6 @@ export * from './components/dialogs/ConfirmDialog';
 export * from './components/ImportMapper';
 export * from './components/FolderTree';
 export * from './components/HierarchyPicker';
+export * from './components/ExplorerLayout';
+export * from './components/ViewTabs';
+export * from './components/EntityActionToolbar';
