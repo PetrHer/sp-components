@@ -10,7 +10,7 @@ Phase 1 (move now)
 
 Phase 2 (small abstractions, then move)
 - [x] Add FormLayout with configurable labels/actions (no IPC text hardcoded).
-- [ ] Extract PricelistPicker into generic HierarchyPicker with data-provider input.
+- [x] Extract PricelistPicker into generic HierarchyPicker with data-provider input.
 - [ ] Extract EntityCreateDialog into generic CreateEntityDialog with injected fields/options.
 - [ ] Add shared contracts:
   - [ ] TreeNode
@@ -34,3 +34,22 @@ Phase 3 (keep domain in IPC, consume package)
 Notes
 - Target package is SPFx-only, so browser storage usage is acceptable.
 - Prioritize reusable UI primitives first, domain workflows later.
+
+Rescan Suggestions (2026-05-12)
+- [ ] Remove stale local duplicates in IPC that are now package-owned (commented code files):
+  - components/HierarchyPicker.tsx
+  - views/ExplorerLayout.tsx
+  - views/ViewTabs.tsx
+  - views/EntityActionToolbar.tsx
+- [ ] Keep only one FolderTree source of truth:
+  - decide whether to keep IPC-local FolderTree or move FolderTree into package and consume it from there
+- [ ] Convert EntityCreateDialog to package-level CreateEntityDialog API:
+  - keep IPC-specific service/data mapping in wrapper
+  - pass normalized tree nodes and callbacks into reusable dialog
+- [ ] Add contracts for import pipeline in package:
+  - ImportSource
+  - ColumnMapping
+- [ ] Add small migration validation checklist in IPC:
+  - ListView compiles without local ExplorerLayout/ViewTabs/EntityActionToolbar imports
+  - PricelistPicker and EntityCreateDialog both use package HierarchyPicker
+  - npm run build passes in IPC after duplicate file removal
