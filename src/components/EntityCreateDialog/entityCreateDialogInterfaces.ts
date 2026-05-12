@@ -5,7 +5,6 @@ export interface EntityCreateDialogProps {
     onClose: () => void;
     onConfirm: (data: { name: string, basedOnId?: string }) => void;
     allFolders: Folder[];
-    currentFolder: Folder | null;
     rootFolderUrl: string;
     title: string;
     showBasePicker?: boolean;
