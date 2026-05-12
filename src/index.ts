@@ -7,3 +7,4 @@ export * from './components/HierarchyPicker';
 export * from './components/ExplorerLayout';
 export * from './components/ViewTabs';
 export * from './components/EntityActionToolbar';
+export * from "./components/EntityCreateDialog";
