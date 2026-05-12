@@ -1,6 +1,6 @@
 {
   "name": "@petrher/sp-components",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Custom reusable components and layouts built with Fluent UI React",
   "type": "module",
   "main": "./dist/index.cjs",
